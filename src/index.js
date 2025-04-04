@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import parse  from './parser.js';
+import compare from './comparer.js';
 
 const genDiff = (filepath1, filepath2) => {
     const fullPath1 = path.resolve(filepath1);
@@ -12,7 +13,9 @@ const genDiff = (filepath1, filepath2) => {
     const parsedData1 = parse(content1);
     const parsedData2 = parse(content2);
 
-    console.log(arsedData1, parsedData2);
+    const compared = compare(parsedData1, parsedData2);
+
+    console.log(compared);
    
 };
 
