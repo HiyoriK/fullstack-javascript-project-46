@@ -12,8 +12,8 @@ const gendiff = (filepath1, filepath2) => {
     const content1 = fs.readFileSync(filepath1, 'utf-8');
     const content2 = fs.readFileSync(filepath2, 'utf-8');
 
-    const obj1 = parse(content1);
-    const obj2 = parse(content2);
+    const obj1 = parse(content1, ext1);
+    const obj2 = parse(content2, ext2);
 
     console.log(obj1, obj2);
 }
