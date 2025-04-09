@@ -1,2 +1,3 @@
-test:
-	npm test
+
+make lint:
+	npx eslint
