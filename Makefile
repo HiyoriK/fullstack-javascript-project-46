@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-
-make lint:
-	npx eslint
-=======
 install:
 	npm ci
-
-publish:
-	npm publish --dry-run
 
 gendiff:
 	node bin/gendiff.js
@@ -15,6 +7,6 @@ gendiff:
 make lint:
 	npx eslint
 
-test:
+make test:
 	npm test
->>>>>>> refs/remotes/origin/main
+
