@@ -42,4 +42,17 @@ export default defineConfig([
     language: "css/css",
     extends: ["css/recommended"],
   },
+  {
+    "overrides": [
+      {
+        "files": [
+          "**/*.spec.js",
+          "**/*/spec.jsx"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ] 
+  }
 ]);

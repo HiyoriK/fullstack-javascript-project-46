@@ -12,7 +12,7 @@ const parse = (file) => {
       return JSON.parse(content);
     case ".yaml":
     case ".yml":
-      return yaml.loadgendiff(content);
+      return yaml.load(content);
     default:
       throw new Error(`Unknown ${extension}`);
   }
