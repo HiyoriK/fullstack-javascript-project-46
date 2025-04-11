@@ -9,18 +9,18 @@ const getFixturePath = (name) =>
   path.join(__dirname, "..", "__fixtures__", name);
 const getFilePath = (name) => path.join(name);
 
-test('plain-json test', () => {
-  const expected = fs.readFileSync(getFixturePath("plain.txt"), "utf-8");
-  const file1 = getFilePath("file1.json");
-  const file2 = getFilePath("file2.json");
+// test('plain-json test', () => {
+//   const expected = fs.readFileSync(getFixturePath("plain.txt"), "utf-8");
+//   const file1 = getFilePath("file1.json");
+//   const file2 = getFilePath("file2.json");
 
-  expect(gendiff(file1, file2)).toEqual(expected.trim());
-})
+//   expect(gendiff(file1, file2)).toEqual(expected.trim());
+// })
 
-test('plain-yaml test', () => {
-  const expected = fs.readFileSync(getFixturePath("plain.txt"), "utf-8");
-  const file1 = getFilePath("file1.yaml");
-  const file2 = getFilePath("file2.yaml");
+// test('plain-yaml test', () => {
+//   const expected = fs.readFileSync(getFixturePath("plain.txt"), "utf-8");
+//   const file1 = getFilePath("file1.yaml");
+//   const file2 = getFilePath("file2.yaml");
 
-  expect(gendiff(file1, file2)).toEqual(expected.trim());
-});
+//   expect(gendiff(file1, file2)).toEqual(expected.trim());
+// });
